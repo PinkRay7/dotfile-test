@@ -1,0 +1,10 @@
+# ~/.gitconfig - Basic Git configuration for testing
+[alias]
+    co = checkout
+    br = branch
+    st = status
+    cm = commit -m
+
+[core]
+    editor = vim               # Use Vim as the default Git editor
+    excludesfile = ~/.gitignore_global

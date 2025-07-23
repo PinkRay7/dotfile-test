@@ -1,0 +1,36 @@
+#!/bin/bash
+
+# ~/dotfiles/install.sh - Basic setup script
+
+echo "Starting dotfiles setup..."
+
+# Variables
+DOTFILES_DIR=$(pwd)
+BACKUP_DIR="$DOTFILES_DIR/backup"
+
+# Create a backup directory for existing files (if not present)
+mkdir -p "$BACKUP_DIR"
+
+# Function to symlink files
+link_file() {
+    local src="$DOTFILES_DIR/$1"
+    local dest="$HOME/$1"
+
+    # Backup existing file, if it exists
+    if [ -e "$dest" ]; then
+        echo "Backing up existing $dest to $BACKUP_DIR"
+        mv "$dest" "$BACKUP_DIR/"
+    fi
+
+    # Create the symlink
+    echo "Creating symlink for $src -> $dest"
+    ln -sf "$src" "$dest"
+}
+
+# Symlink files
+link_file .zshrc
+link_file .vimrc
+link_file .gitconfig
+
+# Success message
+echo "Dotfiles setup completed!"
