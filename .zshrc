@@ -15,9 +15,6 @@ function mkcd() {
   mkdir -p "$@" && cd "$_"
 }
 
-# Add custom path (example, adjust as necessary)
-export PATH="$HOME/bin:$PATH"
-
 # Enable Zsh auto-suggestions if available
 if [ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]; then
   source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

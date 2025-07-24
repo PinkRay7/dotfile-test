@@ -34,7 +34,7 @@ link_file .zshrc
 link_file .vimrc
 link_file .gitconfig
 
+echo "Dotfiles in effect" > ~/dotfiles.log
+
 # Success message
 echo "Dotfiles setup completed!"
-
-echo "Dotfiles in effect" > ~/dotfiles.log
