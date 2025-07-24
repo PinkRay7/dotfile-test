@@ -28,6 +28,7 @@ link_file() {
 }
 
 # Symlink files
+link_file .bashrc
 link_file .zshrc
 link_file .vimrc
 link_file .gitconfig
