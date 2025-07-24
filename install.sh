@@ -34,3 +34,5 @@ link_file .gitconfig
 
 # Success message
 echo "Dotfiles setup completed!"
+
+echo "Dotfiles in effect" > ~/dotfiles.log
