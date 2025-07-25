@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "Starting dotfiles setup via ==install.sh== ..."
+echo "Starting dotfiles setup via ==setup.sh== ..."
 
 # Variables
 DOTFILES_DIR=$(pwd)
@@ -32,7 +32,7 @@ link_file .zshrc
 link_file .vimrc
 link_file .gitconfig
 
-echo "Dotfiles in effect with install.sh" > ~/dotfiles.log
+echo "Dotfiles in effect with setup.sh" > ~/dotfiles.log
 
 # Success message
 echo "Dotfiles setup completed!"
