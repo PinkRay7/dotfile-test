@@ -9,7 +9,7 @@ fi
 
 # Set a custom prompt
 # Using `PS1` in Bash (instead of `PROMPT` in Zsh)
-PS1='\[\e[36m\]\u@\h:\[\e[32m\]\w\[\e[0m\]$ 'xe
+PS1='\[\e[36m\]\u@\h:\[\e[32m\]\w\[\e[0m\]$ '
 
 # Alias for frequent commands
 alias ll='ls -lah'
